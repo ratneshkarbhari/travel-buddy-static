@@ -119,6 +119,14 @@ a{
   width: 100%;
 }
 
+.trip-card-imagex{
+  aspect-ratio: 1/.8;
+  border-radius: 43px;
+  
+  object-fit: cover;
+  width: 100%;
+}
+
 .bg-light-gray{
   background-color: #fcfafa;
 }
@@ -180,7 +188,7 @@ header nav{
   padding-left: 1em;
 }
 
-#contact-hero,#contact-hero-touch{
+#contact-hero,#contact-hero-touch,#about-hero,#about-hero-touch{
   background-color: aqua;
   color: #0a0a0a;
 }
