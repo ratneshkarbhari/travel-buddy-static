@@ -206,3 +206,87 @@ header nav{
 .form-control{
   border: 1px solid darkgray;
 }
+
+.shadow-overlay{
+  background-color: rgba(0,0,0,.4);
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+.trip-page-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://captureatrip.s3.amazonaws.com/uploads/trip/images/banner/caa393f3-0284-4e04-aad2-8599ee2af6d0.jpg") center center no-repeat;
+  background-size: cover;
+}
+.trip-page-hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #000, #000);
+  opacity: 0.6;
+}
+
+
+.trip-page-hero-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  overflow: hidden;
+  padding-left: 5em;
+}
+
+.banr-btn{
+  background-color: white;
+  opacity: 1.0;
+  z-index: 3;
+  padding: 0.5em;
+}
+
+.trip-icons{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 1em;
+}
+
+.c-box .thesis {
+  border: 1px solid #3086a7;
+}
+.c-box .thesis .th-title-bg {
+  background: #3086a7;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+}
+.c-box .thesis ul.why {
+  color: #3086a7;
+}
+.c-box .thesis ul.why li {
+  margin: 1rem 0.5rem;
+}
+.c-box .thesis ul.why li span {
+  font-weight: 600;
+}
+.btn{
+  margin-bottom: 1em;
+}
+
+.trip-page-card{
+  margin-bottom: 1em;
+}
+
+.tab-link{
+  font-size: 0.85em;
+}

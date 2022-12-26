@@ -17,7 +17,8 @@
 
 <body>
 
-    <div id="preloader" style="background-color: #F5F5F7; position: fixed; z-index: 5; top: 0; left:0; right:0; bottom:0;">
+    <div id="preloader"
+        style="background-color: #F5F5F7; position: fixed; z-index: 5; top: 0; left:0; right:0; bottom:0;">
         <div class="text-center">
             <img src="assets/images/preloader.gif">
             <h4>Loading</h4>
@@ -55,7 +56,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                                
+
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
@@ -100,167 +101,454 @@
                     </ul>
 
 
-                  </div>
                 </div>
+            </div>
 
-                
+
             </div>
         </nav>
     </header>
 
 
 
-    <main id="home" class="page-content">
+    <main id="trip" class="page-content">
 
 
 
         <!-- HOME HERO -->
-        <section class="text-center d-none d-lg-block text-dark hero-section"  id="contact-hero">
+        <section class="text-left d-none d-lg-block text-dark hero-section trip-page-hero"
+            style="background-image: url('./assets/images/trip_bg.jpg'); background-size: 'cover';" id="trip-hero">
 
 
-            <div class="section">
-                <h1 style="color: #000;">TRIP PAGE</h1>
+
+            <div class="trip-page-hero-section">
+                <h1 class="text-light">TRIP NAME</h1>
+
+
 
             </div>
 
+            <div class="container-fluid" style="margin-bottom: 2em;">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-md-end mt-3 btn-mobile-resp" id="ctaBox"><a
+                            target="_blank" download=""
+                            href="https://captureatrip.s3.amazonaws.com/uploads/trip/files/itinerary/f1e24851-4e6d-42f9-a166-27fc0689427a.pdf"
+                            class="banr-btn btn" style="margin-right: 1em;">GET ITINERARY</a><a class="banr-btn btn"
+                            href="/book/meghalaya">BOOK NOW</a></div>
+                </div>
+            </div>
 
 
 
 
         </section>
 
-        <section class="text-center d-lg-none text-dark hero-section"  id="contact-hero-touch">
-
-
-            <div class="section">
-                <h1 style="color: #000;">TRIP PAGE</h1>
-
-            </div>
-
-    
-    
-
-
-
-        </section>
-
-        <section id="contact-form" class="regular-section">
-
+        <section id="trip-details" class="regular-section">
             <div class="container">
 
                 <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                        <img src="assets/icons/schedule.svg" class="trip-icons">
+                        <p style="margin: 0;">Duration</p>
+                        <p style="margin: 0;">5N 6D</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                        <img src="assets/icons/rupee.svg" class="trip-icons">
+                        <p style="margin: 0;">Starting price</p>
+                        <p style="margin: 0;">20,999</p>
+                        <em>No cost emi available</em>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                        <img src="assets/icons/location.svg" class="trip-icons">
+                        <p style="margin: 0;">Pickup and Drop</p>
+                        <p style="margin: 0;">X to Y</p>
+                    </div>
+                    <div class="col-lg-9 col-md-6 col-md-12">
 
-                    <div class="col-lg-2 col-md-12 col-sm-12"></div>
+                        <div class="container-fluid">
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-md-12"></div>
+                </div>
+
+                <div class="row">
                     <div class="col-lg-8 col-md-12 col-sm-12">
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugiat magni placeat cumque, reprehenderit unde dolorem voluptatem nemo veritatis fugit! Molestiae necessitatibus ad magni, ipsam repellat voluptas vel laudantium laboriosam eligendi inventore maiores eum tenetur ut a consequatur sit temporibus ea labore modi doloribus in? Harum, soluta beatae. Blanditiis, nihil.</p>
+                        <div class="c-box mt-5 card trip-page-card">
+
+                            <div class="card-body">
+
+
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link tab-link active" id="description-tab" data-bs-toggle="tab"
+                                            data-bs-target="#description-tab-pane" type="button" role="tab"
+                                            aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link tab-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                                            aria-selected="false">ITINERARY</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link tab-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                                            aria-selected="false">Dates and Costing</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link tab-link" id="inclusion-tab" data-bs-toggle="tab"
+                                            data-bs-target="#inclusion-tab-pane" type="button" role="tab" aria-controls="inclusion-tab-pane"
+                                            aria-selected="false">Inclusion</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link tab-link" id="exclusion-tab" data-bs-toggle="tab"
+                                            data-bs-target="#exclusion-tab-pane" type="button" role="tab" aria-controls="exclusion-tab-pane"
+                                            aria-selected="false">Exclusion</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
+                                        aria-labelledby="description-tab" tabindex="0">
+                                        Description:
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque eos, sequi
+                                        cupiditate necessitatibus iure nesciunt. Repudiandae minus quia incidunt.
+                                    </div>
+                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                                        tabindex="0">
+                                    Itinerary
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit hic quaerat atque fugiat quasi aliquid eaque at accusamus ipsum?
+                                    </div>
+                                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                                        tabindex="0">
+                                    Dates and costing
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit hic quaerat atque fugiat quasi aliquid eaque at accusamus ipsum?
+                                    </div>
+                                    <div class="tab-pane fade" id="inclusion-tab-pane" role="tabpanel" aria-labelledby="inclusion-tab"
+                                    tabindex="0">
+                                Inclusion
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit hic quaerat atque fugiat quasi aliquid eaque at accusamus ipsum?
+                                </div>
+                                <div class="tab-pane fade" id="exclusion-tab-pane" role="tabpanel" aria-labelledby="exclusion-tab"
+                                tabindex="0">
+                            Exclusion
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit hic quaerat atque fugiat quasi aliquid eaque at accusamus ipsum?
+                            </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="card trip-page-card">
+
+                            <div class="card-body">
+
+                                <h4>Photos</h4>
+
+                                <div class="swiper swiper-trips d-none d-lg-block">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper container">
+                
+                
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="assets/images/products/p1.jpg" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p1.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">HISTORICAL</h2>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="assets/images/products/p1.jpg" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p1.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">HISTORICAL</h2>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="assets/images/products/p1.jpg" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p1.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">HISTORICAL</h2>
+                                            </a>
+                                        </div>
+                
+                
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <!-- <div class="swiper-pagination"></div> -->
+                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                
+                                <div class="swiper swiper-trips-touch d-md-block d-sm-block d-lg-none">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper container">
+                
+                
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="assets/images/products/p1.jpg" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p1.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">HISTORICAL</h2>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="assets/images/products/p1.jpg" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p1.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">HISTORICAL</h2>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="assets/images/products/p1.jpg" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p1.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">HISTORICAL</h2>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <!-- <div class="swiper-pagination"></div> -->
+                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="card trip-page-card">
+
+                            <div class="card-body">
+
+                                <h4>Videos</h4>
+
+                                <div class="swiper swiper-trips d-none d-lg-block">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper container">
+                
+                
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="//www.youtube.com/watch?v=6oKFao0aISA" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p1.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">HISTORICAL</h2>
+                                            </a>
+                                        </div>
+                
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="//www.youtube.com/watch?v=6oKFao0aISA" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p2.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">RELIGIOUS</h2>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="//www.youtube.com/watch?v=6oKFao0aISA" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p3.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">BACKPACKING TRIPS</h2>
+                                            </a>
+                                        </div>
+                
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <!-- <div class="swiper-pagination"></div> -->
+                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                
+                                <div class="swiper swiper-trips-touch d-md-block d-sm-block d-lg-none">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper container">
+                
+                
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="//www.youtube.com/watch?v=6oKFao0aISA" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p1.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">HISTORICAL</h2>
+                                            </a>
+                                        </div>
+                
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="//www.youtube.com/watch?v=6oKFao0aISA" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p2.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">RELIGIOUS</h2>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide text-center trip-card">
+                                            <a href="//www.youtube.com/watch?v=6oKFao0aISA" data-lity>
+                                                <img class="trip-card-image" src="assets/images/products/p3.jpg">
+                                                <div class="trip-meta d-none">
+                                                    <span class="location"><img src="assets/icons/location.svg" class="trip-meta-icon">
+                                                        Location</span>
+                                                    <span class="duration"><img src="assets/icons/schedule.svg" class="trip-meta-icon">
+                                                        5N 6D</span>
+                                                </div>
+                                                <h2 class="trip-title">BACKPACKING TRIPS</h2>
+                                            </a>
+                                        </div>
+                
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <!-- <div class="swiper-pagination"></div> -->
+                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                                
+
+                            </div>
+                        </div>
+
+
+                       
+                        
 
                     </div>
-                    <div class="col-lg-2 col-md-12 col-sm-12"></div>
-                    
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+
+                        <div class="c-box mt-5 card">
+
+                            <div class="card-body">
+
+                                <p class="s-title text-center">The reality of our trip</p>
+                            <div class="row">
+                                <div class="col-lg-12 mt-lg-4">
+                                    <div class="react-player" style="width: 100%; height: 198px;">
+                                        <div class="react-player__preview" tabindex="0"
+                                            style="width: 100%; height: 100%; background-size: cover; background-position: center center; cursor: pointer; display: flex; align-items: center; justify-content: center; background-image: url(&quot;https://i.ytimg.com/vi/RQrWFzNgye8/hqdefault.jpg&quot;);">
+                                            <div class="react-player__shadow"
+                                                style="background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%); border-radius: 64px; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="react-player__play-icon"
+                                                    style="border-style: solid; border-width: 16px 0px 16px 26px; border-color: transparent transparent transparent white; margin-left: 7px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 my-3">
+                                    <p class="tripdprice mb-0"> INR 5,499 Per Person <span>| *GST @5% extra</span></p>
+                                </div>
+                                <div class="form-quote">
+                                    <form class="w-100"><label for="name"><span class="visually-hidden">Enter
+                                                Name</span></label><input name="name" type="text" class="form-control"
+                                            id="name" placeholder="Enter Name..."><label for="contact"><span
+                                                class="visually-hidden">Contact Number</span></label><input name="phone"
+                                            type="tel" maxlength="10" class="form-control" id="contact"
+                                            placeholder="Enter Number..."><label for="email"><span
+                                                class="visually-hidden">Email Id</span></label><input name="email"
+                                            type="email" class="form-control" id="email"
+                                            placeholder="Email Id..."><label for="destination"><span
+                                                class="visually-hidden">Destination</span></label><input
+                                            name="destination" type="text" class="form-control" id="destination"
+                                            placeholder="Destination...">
+                                            <button class="btn btn-primary d-block w-100" type="submit" style="margin-top: 1em;">Get Quote</button></form>
+                                            <a
+                                        href="https://wa.me/918178500967?text=Hey!%20CaptureTrip%20I%20am%20interested%20in%20your%20trips"
+                                        target="_blank" class="btn btn-success d-block"><span class="wtsicon"></span>
+                                        Whatsapp</a><a  href="tel:8178500967" target="_blank"
+                                        class="btn btn-info d-block"><span class="callnowicon"></span> Call Now</a>
+                                </div>
+                                
+                            </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
                 </div>
 
-            </div>
-
-        </section>
-
-        <section id="contact-form" class="regular-section bg-light-gray">
-
-            <div class="container">
-
-                <div class="row">
-
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 text-center" style="margin-bottom: 1em;">
-                        <a href="trip.html">
-                            <img class="trip-card-imagex" src="assets/images/products/p3.jpg">
-                            <h2 class="trip-title">Feature</h2>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 text-center" style="margin-bottom: 1em;">
-                        <a href="trip.html">
-                            <img class="trip-card-imagex" src="assets/images/products/p3.jpg">
-                            <h2 class="trip-title">Feature</h2>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 text-center" style="margin-bottom: 1em;">
-                        <a href="trip.html">
-                            <img class="trip-card-imagex" src="assets/images/products/p3.jpg">
-                            <h2 class="trip-title">Feature</h2>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 text-center" style="margin-bottom: 1em;">
-                        <a href="trip.html">
-                            <img class="trip-card-imagex" src="assets/images/products/p3.jpg">
-                            <h2 class="trip-title">Feature</h2>
-                        </a>
-                    </div>
-                    
-                    
-                </div>
+                
 
             </div>
-
-        </section>
-
-
-        <section id="contact-form" class="regular-section">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-lg-2 col-md-12 col-sm-12"></div>
-                    <div class="col-lg-8 col-md-12 col-sm-12">
-
-                        <h1 class="section-title text-center">FAQs</h1>
-
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Question #1
-                                </button>
-                              </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Question #2
-                                </button>
-                              </h2>
-                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  Question #3
-                                </button>
-                              </h2>
-                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                    </div>
-                    <div class="col-lg-2 col-md-12 col-sm-12"></div>
-                    
-                </div>
-
-            </div>
-
         </section>
 
     </main>
@@ -383,14 +671,17 @@
         </div>
     </footer>
 
-    <a class="d-none d-lg-block whatsappLink " target="_blank" href="https://api.whatsapp.com/send?phone=9191379763986&text=I+am+interI am interested in this trip" id="wa-desktop" class="whatsappLink">
+    <a class="d-none d-lg-block whatsappLink " target="_blank"
+        href="https://api.whatsapp.com/send?phone=9191379763986&text=I+am+interI am interested in this trip"
+        id="wa-desktop" class="whatsappLink">
         <img src="https://rickagauba.com/assets/images/wa.png" style="width: 60px;
 height: 60px;
 position: fixed;
 right: 1em;
 bottom: 8em;">
     </a>
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=9191379763986&text=I am interested in this trip" id="wa-touch" class="whatsappLink d-block d-lg-none">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=9191379763986&text=I am interested in this trip"
+        id="wa-touch" class="whatsappLink d-block d-lg-none">
         <img src="https://rickagauba.com/assets/images/wa.png" style="width: 60px;
 height: 60px;
 position: fixed;
@@ -399,16 +690,16 @@ bottom: 20em;">
     </a>
 
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/61793cd486aee40a57389cbd/1fj0pb8de';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/61793cd486aee40a57389cbd/1fj0pb8de';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
 
