@@ -290,3 +290,15 @@ header nav{
 .tab-link{
   font-size: 0.85em;
 }
+header#scroll{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  z-index: 5;
+}
+header#scroll nav{
+  padding: 1em 0;
+}
