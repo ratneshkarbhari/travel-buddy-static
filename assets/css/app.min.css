@@ -375,7 +375,9 @@ header#scroll nav{
     width: 40%;
   }
 
-
+#myTab{
+  flex-wrap: nowrap; overflow-x: scroll;
+}
 #myTab li button{
   min-width: 33vw;
 }
@@ -389,6 +391,10 @@ header#scroll nav{
 
 @media (min-width: 320px) and (max-width: 480px) {
   
+
+#myTab{
+  flex-wrap: nowrap; overflow-x: scroll;
+}
   .navbar-brand{
     width: 50%;
   }
