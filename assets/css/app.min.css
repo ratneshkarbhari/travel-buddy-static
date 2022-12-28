@@ -228,6 +228,11 @@ header nav{
   background: url("https://captureatrip.s3.amazonaws.com/uploads/trip/images/banner/caa393f3-0284-4e04-aad2-8599ee2af6d0.jpg") center center no-repeat;
   background-size: cover;
 }
+
+#myTab li button{
+  min-width: 33vw;
+}
+
 .trip-page-hero:before {
   content: "";
   position: absolute;
