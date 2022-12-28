@@ -50,6 +50,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100vh;
 }
@@ -161,6 +162,10 @@ ul.footer-link-list{
 }
 header nav{
   padding: 0.3em 0 !important;
+}
+
+.navbar-brand img{
+  width: 100%;
 }
 
 #sidenavCloser{
@@ -301,4 +306,84 @@ header#scroll{
 }
 header#scroll nav{
   padding: 1em 0;
+}
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  .navbar-brand{
+    width: 20%;
+  }
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .navbar-brand{
+    width: 20%;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .navbar-brand{
+    width: 25%;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .navbar-brand{
+    width: 30%;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .navbar-brand{
+    width: 40%;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .navbar-brand{
+    width: 50%;
+  }
+  
 }
