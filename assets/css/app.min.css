@@ -229,9 +229,6 @@ header nav{
   background-size: cover;
 }
 
-#myTab li button{
-  min-width: 33vw;
-}
 
 .trip-page-hero:before {
   content: "";
@@ -377,6 +374,11 @@ header#scroll nav{
   .navbar-brand{
     width: 40%;
   }
+
+
+#myTab li button{
+  min-width: 33vw;
+}
   
 }
 
@@ -390,5 +392,9 @@ header#scroll nav{
   .navbar-brand{
     width: 50%;
   }
+
+#myTab li button{
+  min-width: 33vw;
+}
   
 }
